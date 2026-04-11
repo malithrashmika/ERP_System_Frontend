@@ -9,19 +9,6 @@ function App() {
     <>
       <Toaster position="top-right" richColors />
       <AppRouter /> 
-      <BrowserRouter>
-        <div className="flex min-h-screen bg-gray-50">
-          <Sidebar />
-          <main className="flex-1 p-8">
-            <Routes>
-              <Route path="/" element={<Dashboard />} />
-              <Route path="/products" element={<ProductsPage />} />
-              <Route path="/supplier" element={<Supplier />} />
-              <Route path="*" element={<Navigate to="/" />} />
-            </Routes>
-          </main>
-        </div>
-      </BrowserRouter>
     </>
   );
 }

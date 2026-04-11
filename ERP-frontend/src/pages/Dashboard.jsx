@@ -22,6 +22,24 @@ function Dashboard() {
       >
         Purchase Orders
       </button>
+      <button
+        onClick={() => navigate("/products")}
+        className="mt-4 px-6 py-2 bg-[#7C3AED] text-white rounded-lg hover:bg-[#6D28D9] transition"
+      >
+        Products
+      </button>
+      <button
+        onClick={() => navigate("/suppliers")}
+        className="mt-4 px-6 py-2 bg-[#7C3AED] text-white rounded-lg hover:bg-[#6D28D9] transition"
+      >
+        Suppliers
+      </button>
+      <button
+        onClick={() => navigate("/stock")}
+        className="mt-4 px-6 py-2 bg-[#7C3AED] text-white rounded-lg hover:bg-[#6D28D9] transition"
+      >
+        Stock
+      </button>
 
       <button
         onClick={handleLogout}

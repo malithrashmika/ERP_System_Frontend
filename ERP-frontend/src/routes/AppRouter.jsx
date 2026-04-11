@@ -7,6 +7,7 @@ import ResetPassword from "../pages/ResetPassword";
 import ProtectedRoute from "./ProtectedRoute";
 import PurchaseOrderPage from "../pages/PurchaseOrderPage";
 import ProductsPage from "../pages/ProductsPage";
+import StockPage from "../pages/stockpage";
 
 function AppRouter() {
   return (
@@ -46,6 +47,8 @@ function AppRouter() {
             </ProtectedRoute>
           }
         />
+
+        <Route path="/stock" element={<ProtectedRoute><StockPage /></ProtectedRoute>} />
 
       </Routes>
     </BrowserRouter>
