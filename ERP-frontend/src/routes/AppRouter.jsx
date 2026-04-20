@@ -8,12 +8,12 @@ import ProtectedRoute from "./ProtectedRoute";
 import PurchaseOrderPage from "../pages/PurchaseOrderPage";
 import ProductsPage from "../pages/ProductsPage";
 import StockPage from "../pages/stockpage";
+import DepartmentPage from "../pages/Departmentpage";
 
 function AppRouter() {
   return (
     <BrowserRouter>
       <Routes>
-
         {/* Public routes */}
         <Route path="/" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
@@ -48,8 +48,23 @@ function AppRouter() {
           }
         />
 
-        <Route path="/stock" element={<ProtectedRoute><StockPage /></ProtectedRoute>} />
+        <Route
+          path="/stock"
+          element={
+            <ProtectedRoute>
+              <StockPage />
+            </ProtectedRoute>
+          }
+        />
 
+        <Route
+          path="/department"
+          element={
+            <ProtectedRoute>
+              <DepartmentPage />
+            </ProtectedRoute>
+          }
+        />
       </Routes>
     </BrowserRouter>
   );
