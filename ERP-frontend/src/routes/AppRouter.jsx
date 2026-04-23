@@ -9,6 +9,7 @@ import PurchaseOrderPage from "../pages/PurchaseOrderPage";
 import ProductsPage from "../pages/ProductsPage";
 import StockPage from "../pages/stockpage";
 import DepartmentPage from "../pages/Departmentpage";
+import EmployeePage from "../pages/Employeepage";
 
 function AppRouter() {
   return (
@@ -65,6 +66,8 @@ function AppRouter() {
             </ProtectedRoute>
           }
         />
+
+        <Route path="/employee" element={<ProtectedRoute><EmployeePage /></ProtectedRoute>} />
       </Routes>
     </BrowserRouter>
   );

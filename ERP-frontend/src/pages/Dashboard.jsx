@@ -49,6 +49,13 @@ function Dashboard() {
       </button>
 
       <button
+        onClick={() => navigate("/employee")}
+        className="mt-4 px-6 py-2 bg-[#7C3AED] text-white rounded-lg hover:bg-[#6D28D9] transition"
+      >
+        Employee
+      </button>
+
+      <button
         onClick={handleLogout}
         className="px-6 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition"
       >
